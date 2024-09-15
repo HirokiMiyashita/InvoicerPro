@@ -1,5 +1,5 @@
 "use client";
-import { signUpUser } from "@/lib/supabase/auth";
+// import { signUpUser } from "@/lib/supabase/auth";
 import { useState } from "react";
 
 const SignUp = () => {
@@ -14,12 +14,12 @@ const SignUp = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const response = await signUpUser(formData);
-    if (response.error) {
-      console.error(response.error);
-    } else {
-      console.log("User signed up successfully", response.data);
-    }
+    // const response = await signUpUser(formData);
+    // if (response.error) {
+    //   console.error(response.error);
+    // } else {
+    //   console.log("User signed up successfully", response.data);
+    // }
   };
 
   return (
